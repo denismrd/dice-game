@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(0, 41, 78);
+    background: linear-gradient(
+        132deg,
+        rgba(0, 41, 78, 1) 0%,
+        rgba(0, 106, 203, 1) 35%,
+        rgba(0, 212, 255, 1) 100%
+    );
+}
+.new {
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 100px;
+    background-color: rgb(232, 73, 0);
+    margin-bottom: 40px;
+    color: rgb(255, 255, 255);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.248);
+    font-weight: 300;
+    font-size: 14px;
+}
+.scoreboard {
+    width: 95vw;
+    border-radius: 5px;
+    overflow: hidden;
+}
+@media (min-width: 820px) {
+    .scoreboard {
+        width: 777px;
+    }
+}
+.player {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.378);
+    width: 50%;
+    text-align: center;
+    padding: 50px 0;
+    border-top: rgba(255, 255, 255, 0) solid 4px;
+}
+.score {
+    font-weight: 700;
+    font-size: 20px;
+}
+.scoreboard .select {
+    background-color: rgba(255, 255, 255, 0.652);
+    border-top: white solid 4px;
+}
+.player2 {
+    margin-left: -4.5px;
+}
+.score {
+    margin-bottom: 160px;
+}
+@media (max-width: 650px) {
+    .score {
+        margin-bottom: 100px;
+    }
+}
+.text {
+    margin-bottom: 10px;
+}
+.controls {
+    margin-top: 40px;
+    width: 95vw;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.controls > * {
+    display: inline-block;
+}
+.dice-img {
+    height: 130px;
+    width: 130px;
+    margin-right: 80px;
+    background-image: url("dice-1.png");
+    background-size: cover;
+    border-radius: 20px;
+}
+@media (max-width: 500px) {
+    .dice-img {
+        margin-right: 30px;
+    }
+}
+.zoomt1 {
+    animation: zoomt1 0.7s forwards !important;
+}
+.zoomt2 {
+    animation: zoomt2 0.7s forwards !important;
+}
+.zoomt3 {
+    animation: zoomt3 0.7s forwards !important;
+}
+.zoomt4 {
+    animation: zoomt4 0.7s forwards !important;
+}
+.zoomt5 {
+    animation: zoomt5 0.7s forwards !important;
+}
+.zoomt6 {
+    animation: zoomt6 0.7s forwards !important;
+}
+.zoom1 {
+    animation: zoom1 0.7s forwards;
+}
+.zoom2 {
+    animation: zoom2 0.7s forwards;
+}
+.zoom3 {
+    animation: zoom3 0.7s forwards;
+}
+.zoom4 {
+    animation: zoom4 0.7s forwards;
+}
+.zoom5 {
+    animation: zoom5 0.7s forwards;
+}
+.zoom6 {
+    animation: zoom6 0.7s forwards;
+}
+@keyframes zoomt1 {
+    40% {
+        transform: scale(0);
+        background-image: url("dice-1.png");
+    }
+    100% {
+        background-image: url("dice-1.png");
+    }
+}
+@keyframes zoomt2 {
+    40% {
+        transform: scale(0);
+        background-image: url("dice-2.png");
+    }
+    100% {
+        background-image: url("dice-2.png");
+    }
+}
+@keyframes zoomt3 {
+    40% {
+        transform: scale(0);
+        background-image: url("dice-3.png");
+    }
+    100% {
+        background-image: url("dice-3.png");
+    }
+}
+@keyframes zoomt4 {
+    40% {
+        transform: scale(0);
+        background-image: url("dice-4.png");
+    }
+    100% {
+        background-image: url("dice-4.png");
+    }
+}
+@keyframes zoomt5 {
+    40% {
+        transform: scale(0);
+        background-image: url("dice-5.png");
+    }
+    100% {
+        background-image: url("dice-5.png");
+    }
+}
+@keyframes zoomt6 {
+    40% {
+        transform: scale(0);
+        background-image: url("dice-6.png");
+    }
+    100% {
+        background-image: url("dice-6.png");
+    }
+}
+@keyframes zoom1 {
+    40% {
+        transform: scale(0);
+        background-image: url("dice-1.png");
+    }
+    100% {
+        background-image: url("dice-1.png");
+    }
+}
+@keyframes zoom2 {
+    40% {
+        transform: scale(0);
+        background-image: url("dice-2.png");
+    }
+    100% {
+        background-image: url("dice-2.png");
+    }
+}
+@keyframes zoom3 {
+    40% {
+        transform: scale(0);
+        background-image: url("dice-3.png");
+    }
+    100% {
+        background-image: url("dice-3.png");
+    }
+}
+@keyframes zoom4 {
+    40% {
+        transform: scale(0);
+        background-image: url("dice-4.png");
+    }
+    100% {
+        background-image: url("dice-4.png");
+    }
+}
+@keyframes zoom5 {
+    40% {
+        transform: scale(0);
+        background-image: url("dice-5.png");
+    }
+    100% {
+        background-image: url("dice-5.png");
+    }
+}
+@keyframes zoom6 {
+    40% {
+        transform: scale(0);
+        background-image: url("dice-6.png");
+    }
+    100% {
+        background-image: url("dice-6.png");
+    }
+}
+@media (max-width: 430px) {
+    .dice-img {
+        height: 100px;
+        width: 100px;
+    }
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.buttons > * {
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 100px;
+    background-color: rgba(0, 21, 65, 0.905);
+    color: rgba(255, 255, 255, 0.898);
+}
+.won {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.755);
+    padding: 30px;
+    display: none;
+}
+.won .new {
+    margin: 0;
+}
+.box {
+    padding: 30px;
+    text-align: center;
+    background-color: rgba(252, 5, 5, 0.296);
+    border-radius: 5px;
+    border: solid red 1px;
+}
+.box .text {
+    font-size: 40px;
+    font-weight: 100;
+    margin-bottom: 40px;
+    color: white;
+}
