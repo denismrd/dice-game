@@ -20,7 +20,8 @@ body {
         rgba(0, 212, 255, 1) 100%
     );
 }
-.new {
+.new,
+.how {
     display: inline-block;
     padding: 8px 15px;
     border-radius: 100px;
@@ -30,6 +31,10 @@ body {
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.248);
     font-weight: 300;
     font-size: 14px;
+}
+.how {
+    background-color: white;
+    color: black;
 }
 .scoreboard {
     width: 95vw;
@@ -258,7 +263,8 @@ body {
     background-color: rgba(0, 21, 65, 0.905);
     color: rgba(255, 255, 255, 0.898);
 }
-.won {
+.won,
+.help {
     position: fixed;
     height: 100vh;
     width: 100vw;
@@ -267,23 +273,42 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.755);
+    background-color: rgba(0, 0, 0, 0.905);
     padding: 30px;
     display: none;
+}
+.help {
+    display: flex;
+}
+.help-box {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+}
+.help-box p:not(:last-child) {
+    margin-bottom: 5px;
 }
 .won .new {
     margin: 0;
 }
 .box {
-    padding: 30px;
+    padding: 40px 30px;
     text-align: center;
     background-color: rgba(252, 5, 5, 0.296);
     border-radius: 5px;
-    border: solid red 1px;
+}
+.box .dice-img {
+    display: inline-block;
+    margin: 0;
 }
 .box .text {
     font-size: 40px;
     font-weight: 100;
-    margin-bottom: 40px;
+    margin: 40px 0;
     color: white;
+}
+.box .text span {
+    color: rgb(255, 0, 0);
+
+    font-weight: 900;
 }
