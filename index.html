@@ -14,13 +14,40 @@
     <body>
         <div class="won">
             <div class="box">
-                <div class="text">player 1 won the game</div>
+                <div class="dice-img"></div>
+                <div class="text"><span>PLAYER-1</span> won the game</div>
                 <div class="new" onclick="location.reload()">NEW GAME</div>
+            </div>
+        </div>
+        <div
+            class="help"
+            onclick="document.querySelector('.help').style.display='none'"
+        >
+            <div class="help-box">
+                <h2><span>❓</span> How to play</h2>
+                <br />
+                <p>1.It ia an two players game</p>
+                <p>2.Roll the dice to increase your temporary point</p>
+                <p>
+                    3.Press hold to add your temporary point to your actual
+                    score and the turn will be given to next player
+                </p>
+                <p>
+                    4.If the dice hits 1, then your temporary points will become
+                    0 and the turn will be given to next player
+                </p>
+                <p>5.The player who scores 100 first will win the game</p>
             </div>
         </div>
         <main>
             <div class="new" onclick="location.reload()">
                 <span>🔃</span> NEW GAME
+            </div>
+            <div
+                class="how"
+                onclick="document.querySelector('.help').style.display='flex'"
+            >
+                <span>❓</span> How to play
             </div>
             <br />
             <div class="scoreboard">
