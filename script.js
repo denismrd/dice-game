@@ -18,7 +18,7 @@ p1_score = document.querySelector(".player1 .score .point");
 p1_current = document.querySelector(".player1 .current .point");
 p2_score = document.querySelector(".player2 .score .point");
 p2_current = document.querySelector(".player2 .current .point");
-img = document.querySelector(".dice-img");
+img = document.querySelector(".controls .dice-img");
 let wintext = document.querySelector(".won .box .text");
 let win = document.querySelector(".won");
 
