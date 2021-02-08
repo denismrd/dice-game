@@ -294,7 +294,7 @@ body {
 .box {
     padding: 40px 30px;
     text-align: center;
-    background-color: rgba(252, 5, 5, 0.296);
+    background-color: rgba(252, 5, 5, 0.6);
     border-radius: 5px;
 }
 .box .dice-img {
