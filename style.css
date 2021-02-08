@@ -273,7 +273,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.905);
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 30px;
     display: none;
 }
