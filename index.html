@@ -12,17 +12,14 @@
         <title>Document</title>
     </head>
     <body>
-        <div class="won">
+        <div class="won overlay">
             <div class="box">
                 <div class="dice-img"></div>
                 <div class="text"><span>PLAYER-1</span> won the game</div>
-                <div class="new" onclick="location.reload()">NEW GAME</div>
+                <div class="wonnew but">NEW GAME</div>
             </div>
         </div>
-        <div
-            class="help"
-            onclick="document.querySelector('.help').style.display='none'"
-        >
+        <div class="help overlay">
             <div class="help-box">
                 <h2><span>❓</span> How to play</h2>
                 <br />
@@ -37,18 +34,14 @@
                     0 and the turn will be given to next player
                 </p>
                 <p>5.The player who scores 100 first will win the game</p>
+                <div class="play-container">
+                    <div class="play but">Play</div>
+                </div>
             </div>
         </div>
         <main>
-            <div class="new" onclick="location.reload()">
-                <span>🔃</span> NEW GAME
-            </div>
-            <div
-                class="how"
-                onclick="document.querySelector('.help').style.display='flex'"
-            >
-                <span>❓</span> How to play
-            </div>
+            <div class="new but"><span>🔃</span> NEW GAME</div>
+            <div class="how but"><span>❓</span> How to play</div>
             <br />
             <div class="scoreboard">
                 <div class="player player1 select">
@@ -78,9 +71,9 @@
                 <!-- <img src="dice-1.png" alt="dice_image" /> -->
             </div>
             <div class="buttons">
-                <div class="roll-dice"><span>🎲</span> ROLL DICE</div>
+                <div class="roll-dice but"><span>🎲</span> ROLL DICE</div>
                 <br />
-                <div class="hold"><span>✔</span> HOLD</div>
+                <div class="hold but"><span>✔</span> HOLD</div>
             </div>
         </section>
         <script src="script.js"></script>
