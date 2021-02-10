@@ -20,21 +20,62 @@ body {
         rgba(0, 212, 255, 1) 100%
     );
 }
-.new,
-.how {
+.but {
     display: inline-block;
     padding: 8px 15px;
     border-radius: 100px;
-    background-color: rgb(232, 73, 0);
-    margin-bottom: 40px;
-    color: rgb(255, 255, 255);
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.248);
     font-weight: 300;
     font-size: 14px;
+    cursor: pointer;
+}
+.new,
+.play,
+.wonnew {
+    background-color: rgb(232, 73, 0);
+    color: rgb(255, 255, 255);
+    margin-bottom: 40px;
 }
 .how {
     background-color: white;
     color: black;
+    animation: clicky 1s 1.5s;
+}
+.play-container {
+    text-align: center;
+}
+.play {
+    margin: 20px 0 0 0;
+    padding: 8px 20px;
+}
+@keyframes clicky {
+    10% {
+        transform: translateX(20px);
+    }
+    20% {
+        transform: translateX(0px);
+    }
+    30% {
+        transform: translateX(20px);
+    }
+    40% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+    60% {
+        transform: translateX(0px);
+    }
+    70% {
+        transform: translateX(20px);
+    }
+    80% {
+        transform: translateX(0);
+    }
+    90% {
+        transform: translateX(20px);
+    }
 }
 .scoreboard {
     width: 95vw;
@@ -257,14 +298,10 @@ body {
     justify-content: center;
 }
 .buttons > * {
-    display: inline-block;
-    padding: 8px 15px;
-    border-radius: 100px;
     background-color: rgba(0, 21, 65, 0.905);
     color: rgba(255, 255, 255, 0.898);
 }
-.won,
-.help {
+.overlay {
     position: fixed;
     height: 100vh;
     width: 100vw;
@@ -275,27 +312,38 @@ body {
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 30px;
-    display: none;
-}
-.help {
     display: flex;
+    transform: scale(0);
+    transition-delay: 0.2s;
 }
+
+/* .help {
+    display: flex;
+} */
 .help-box {
+    transition: 0.3s;
+    transform: translateY(-100vh);
     padding: 20px;
     border-radius: 5px;
     background-color: white;
 }
+.show-overlay {
+    transform: scale(1) !important;
+    transition-delay: 0s !important;
+}
 .help-box p:not(:last-child) {
     margin-bottom: 5px;
 }
-.won .new {
+.wonnew {
     margin: 0;
 }
 .box {
     padding: 40px 30px;
     text-align: center;
-    background-color: rgba(252, 5, 5, 0.6);
+    background-color: rgba(111, 0, 0, 0.85);
     border-radius: 5px;
+    transform: scale(0);
+    transition: 0.3s;
 }
 .box .dice-img {
     display: inline-block;
@@ -305,10 +353,9 @@ body {
     font-size: 40px;
     font-weight: 100;
     margin: 40px 0;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 .box .text span {
-    color: rgb(255, 0, 0);
-
-    font-weight: 900;
+    color: rgb(197, 136, 3);
+    margin-right: 5px;
 }
