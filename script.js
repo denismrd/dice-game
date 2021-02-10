@@ -77,7 +77,6 @@ function switchPlayer() {
             win.classList.add("show-overlay");
             wonbox.style.transform = "scale(1)";
             wintext.textContent = "PLAYER-1 won the game";
-
             return;
         }
         p1.cs = 0;
@@ -89,7 +88,8 @@ function switchPlayer() {
         p2_score.textContent = p2.ps + "";
         p2_current.textContent = 0;
         if (p2.ps >= 100) {
-            win.style.transform = "scale(1)";
+            win.classList.add("show-overlay");
+            wonbox.style.transform = "scale(1)";
             wintext.textContent = "PLAYER-2 won the game";
             return;
         }
